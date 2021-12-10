@@ -16,17 +16,17 @@
     </header>
     <main>
         <section id="balance">
-            <h2>
-                <h1 class="sr-only">
+            
+                <h2 class="sr-only">
                     Balanço geral
-                </h1>               
-            </h2>
+                </h2>               
+           
             <div id="incomes">
                 <h3>
                     Incomes               
                 <img src="./assets/income.svg" alt="Image de entradas"> 
                 </h3>
-                <p id="incomesDisplay">R$ 0,00</p>
+                <p id="incomeDisplay">R$ 0,00</p>
             </div>
             <div id="expenses">
                 <h3>
@@ -65,15 +65,16 @@
     <div class="modal-overlay">
         <div class="modal">
             <div id="form">
-                <h2 class="sr-only">Nova Transação</h2>
-                <form action="" onsubmit="Form.submit(event)">
+                <h2 >Nova Transação</h2>
+                <form action="" onsubmit="Form.Submit(event)">
                     <div class="input">
                         <label for="description" class="sr-only">Descrição</label>                   
                                 <input type="text" name="description" id="description" placeholder="Descrição">                                          
                     </div>
                     <div class="input">
-                        <label for="valor" class="sr-only">Valor</label>
-                        <input type="number" name="valor" id="valor" step="0.01" placeholder="0.00">
+                        <label for="amount" class="sr-only">Valor</label>
+                        <input type="number" name="amount" id="amount" step="0.01" placeholder="0.00">
+                        <small class="help">Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais</small>
                     </div>
                     <div class="input">
                         <label for="date" class="sr-only"></label>
